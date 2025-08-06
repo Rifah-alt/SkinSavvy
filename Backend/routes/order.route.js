@@ -1,4 +1,5 @@
-import express from "express";
+import express from "express"; 
+import { protect } from "../middlewares/auth.middleware.js";
 const router = express.Router();
 import {
   createOrder,
@@ -14,7 +15,7 @@ router.post("/", createOrder);
 //UPDATE ORDER ROUTE
 router.put("/:id", updateOrder);
 //GET ALL ORDERS ROUTE
-router.get("/", getAllOrders);
+router.get("/",protect, getAllOrders);
 // GET ORDER STATS ROUTE
 router.get("/stats", getOrderStats);
 // DELETE ORDER ROUTE
