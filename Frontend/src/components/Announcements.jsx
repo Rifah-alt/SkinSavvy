@@ -3,7 +3,7 @@ const Announcements = () => {
   return (
     <div className="bg-[#e9acd9] text-white text-[18px] font-semibold h-[30px] flex items-center justify-center">
       <Typewriter
-        words={["Everything", "on", "20%Discount", "Discount!"]}
+        words={["Everything", "on", "20%", "Discount!"]}
         loop={1000}
         cursor
         cursorStyle=""

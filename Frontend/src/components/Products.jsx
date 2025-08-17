@@ -59,7 +59,7 @@ const Products = ({ filters, sort, query }) => {
         <Link to={`/product/${product._id}`} key={index}>
           <div className="flex flex-col items-center justify-center h-[500px] w-[250px] m-[20px] cursor-pointer">
             <img
-              src={product.img}
+              src={product.png}
               alt=""
               className="h-[400px] w-[400px] object-cover"
             />
