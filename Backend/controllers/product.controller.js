@@ -3,7 +3,7 @@ import asyncHandler from "express-async-handler";
 
 // CREATE A PRODUCT
 const createProduct = asyncHandler(async (req, res) => {
- 
+
   const newProduct = Product(req.body);
   const product = await newProduct.save();
   if (product) {
@@ -32,7 +32,7 @@ const updateProduct = asyncHandler(async (req, res) => {
 });
 
 //DELETE PRODUCT
-const deleteProduct = asyncHandler(async () => {
+const deleteProduct = asyncHandler(async (req, res) => {
   const product = await Product.findByIdAndDelete(req.params.id);
   if (!product) {
     res.status(404);
@@ -89,11 +89,11 @@ const ratingProduct = asyncHandler(async (req, res) => {
   if (star) {
     const postedRating = await Product.findByIdAndUpdate(
       req.params.productId,
-      { $push: { ratings: { star, name, comment, postedBy }}},
+      { $push: { ratings: { star, name, comment, postedBy } } },
       { new: true }
     );
     res.status(201).json(postedRating);
   }
 });
 
-export {ratingProduct, getAllProducts, getProduct,createProduct,updateProduct, deleteProduct};
+export { ratingProduct, getAllProducts, getProduct, createProduct, updateProduct, deleteProduct };

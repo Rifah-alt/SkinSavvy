@@ -131,7 +131,8 @@ const Product = () => {
           </h2>
           <hr className="mb-4" />
           <span className="block text-gray-600 text-base">
-            1 Garnier Even & Matte Vitamin C Cleansing Foam 500ml
+            ✨ Discover the magic of flawless skin with our skincare collection! ✨
+            💖 Glow. Shine. Slay. Treat your skin to the care it deserves — because you’re worth it!
           </span>
         </div>
 

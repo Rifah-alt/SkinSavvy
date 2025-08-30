@@ -1,8 +1,0 @@
-{
-  "dependencies": {
-    "@reduxjs/toolkit": "^2.8.2",
-    "axios": "^1.11.0",
-    "core-js": "^3.45.0",
-    "infinite-react-carousel": "^1.2.11"
-  }
-}

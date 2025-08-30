@@ -55,7 +55,7 @@ const Cart = () => {
                     {product.title}
                   </h3>
                   <p className="text-gray-600 mb-2">
-                    {product?.desc?.slice(0, 100)}...
+                    {product.desc.slice(0, 100)}...
                   </p>
                   <div className="flex items-center">
                     <FaMinus className="bg-[#ef93db] text-white cursor-pointer p-2 rounded-full text-3xl" />
