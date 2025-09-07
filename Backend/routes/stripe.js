@@ -59,8 +59,7 @@ router.post("/create-checkout-session", async (req, res) => {
 // web hook
 let endpointSecret;
 // This is your Stripe CLI webhook secret for testing your endpoint locally.
-//You are using Stripe API Version [2025-08-27.basil]. 
-// Your webhook signing secret is whsec_1ec0ac7ddf7cfcb536a9aae503e9d5abf7738866f591342409da43300700a72f 
+//// Your webhook signing secret is whsec_1ec0ac7ddf7cfcb536a9aae503e9d5abf7738866f591342409da43300700a72f
 
 router.post(
   "/webhook",
