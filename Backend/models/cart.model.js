@@ -1,18 +1,18 @@
 import mongoose from "mongoose";
 const CartSchema = mongoose.Schema(
   {
-    quantity: { type: Number, require: true},
+    quantity: { type: Number, required: true},
     total: {
       type: Number,
-      require: true,
+      required: true,
     },
     products: {
       type: Array,
-      require: true,
+      required: true,
     },
     userId: {
         type: String,
-        require: true,
+        required: true,
       },
   },
 
